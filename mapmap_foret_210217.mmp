@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapmap>
+<project version="0.5.1">
+  <paints>
+    <paint id="1" name="Photo_marion" className="Image" locked="false">
+      <opacity>1</opacity>
+      <uri>/home/ray/scenes/Sc_3_1.jpg</uri>
+      <rate>0.019999999552965164</rate>
+      <x>-445.5</x>
+      <y>-389</y>
+    </paint>
+    <paint id="2" name="cam" className="Image" locked="false">
+      <opacity>1</opacity>
+      <uri>/tmp/to_mapmap_4.jpg</uri>
+      <rate>1</rate>
+      <x>-445.5</x>
+      <y>-389</y>
+    </paint>
+  </paints>
+  <mappings>
+    <mapping id="1" name="fond" solo="false" className="TextureMapping" depth="1" locked="false" visible="true" paintId="1">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-210.76" x="-331.32"/>
+          <vertex y="-214" x="404"/>
+          <vertex y="310.6" x="-290.16"/>
+          <vertex y="296.88" x="384.08"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-274.286" x="-235.714"/>
+          <vertex y="-276.429" x="736.429"/>
+          <vertex y="347.2" x="-236.6"/>
+          <vertex y="347.2" x="739.2"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping id="2" name="pos1_jar" solo="false" className="TextureMapping" depth="2" locked="false" visible="false" paintId="1">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-213.64" x="-194.04"/>
+          <vertex y="-222" x="18"/>
+          <vertex y="291" x="-151"/>
+          <vertex y="298" x="20"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-309.4" x="-61.88"/>
+          <vertex y="-309.4" x="187.04"/>
+          <vertex y="331" x="-62.8"/>
+          <vertex y="332" x="191.2"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping id="3" name="pos1_cour" solo="false" className="TextureMapping" depth="3" locked="false" visible="false" paintId="1">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-224" x="124"/>
+          <vertex y="-206" x="321"/>
+          <vertex y="297" x="117"/>
+          <vertex y="265" x="287"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-323.4" x="358.68"/>
+          <vertex y="-323.4" x="611.52"/>
+          <vertex y="317.52" x="356.72"/>
+          <vertex y="313.6" x="611.52"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping id="4" name="pos2_jar" solo="false" className="TextureMapping" depth="4" locked="false" visible="true" paintId="1">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-221" x="-387"/>
+          <vertex y="-212" x="-179"/>
+          <vertex y="266.56" x="-354.76"/>
+          <vertex y="283" x="-161"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-325.36" x="-335.16"/>
+          <vertex y="-325.36" x="-86.24"/>
+          <vertex y="315.04" x="-336.08"/>
+          <vertex y="316.04" x="-82.08"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping id="5" name="pos2_cour" solo="false" className="TextureMapping" depth="5" locked="false" visible="true" paintId="1">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-206" x="321"/>
+          <vertex y="-193" x="512"/>
+          <vertex y="276" x="308"/>
+          <vertex y="279" x="479"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-323.4" x="596.68"/>
+          <vertex y="-323.4" x="849.52"/>
+          <vertex y="317.52" x="594.72"/>
+          <vertex y="313.6" x="849.52"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping id="6" name="fond_cam" solo="false" className="TextureMapping" depth="6" locked="false" visible="false" paintId="2">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-210.76" x="-331.32"/>
+          <vertex y="-210.76" x="391.92"/>
+          <vertex y="310.6" x="-290.16"/>
+          <vertex y="296.88" x="384.08"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-242.6" x="-249.8"/>
+          <vertex y="-241.2" x="135.2"/>
+          <vertex y="-8.8" x="-249.8"/>
+          <vertex y="-15.8" x="145"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping id="7" name="pos2_jar_cam" solo="false" className="TextureMapping" depth="7" locked="false" visible="false" paintId="2">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-221" x="-387"/>
+          <vertex y="-214" x="-186"/>
+          <vertex y="266.56" x="-354.76"/>
+          <vertex y="274" x="-173"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-245.08" x="-123.88"/>
+          <vertex y="-243.68" x="20.32"/>
+          <vertex y="-11.28" x="-122.48"/>
+          <vertex y="-11.28" x="20.32"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping id="8" name="pos2_cour_cam" solo="false" className="TextureMapping" depth="8" locked="false" visible="false" paintId="2">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-206" x="321"/>
+          <vertex y="-193" x="512"/>
+          <vertex y="276" x="308"/>
+          <vertex y="279" x="479"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>false</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-244.04" x="-123.92"/>
+          <vertex y="-242.64" x="20.28"/>
+          <vertex y="-10.24" x="-122.52"/>
+          <vertex y="-10.24" x="20.28"/>
+        </vertices>
+      </source>
+    </mapping>
+  </mappings>
+</project>

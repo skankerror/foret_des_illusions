@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.1</Version>
+  <Author>ray</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0">
+    <Input Plugin="MIDI" Line="1" Profile="Akai APC Mini">
+     <PluginParameters MIDISendNoteOff="false"/>
+    </Input>
+    <Output Plugin="DMX USB" Line="0">
+     <PluginParameters UniverseChannels="32"/>
+    </Output>
+    <Feedback Plugin="MIDI" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Function ID="0" Type="Script" Name="22_prepa_sc8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fprepa_video_Sc_8.sh</Command>
+  </Function>
+  <Function ID="1" Type="Script" Name="09_mangrove">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A1%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_6-3.mp4</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A2%20arg%3A7</Command>
+   <Command></Command>
+   <Command>wait%3A1m28s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+  </Function>
+  <Function ID="2" Type="Script" Name="07_etoiles">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A12%20arg%3A30</Command>
+  </Function>
+  <Function ID="3" Type="Script" Name="01_prepa_video">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fprepa_video.sh</Command>
+  </Function>
+  <Function ID="4" Type="Chaser" Name="scripts_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">3</Step>
+   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L7-L9 67%">7</Step>
+   <Step Number="2" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1">17</Step>
+   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2">6</Step>
+   <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L8">46</Step>
+   <Step Number="5" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L9">30</Step>
+   <Step Number="6" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L12">2</Step>
+   <Step Number="7" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2">15</Step>
+   <Step Number="8" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1">1</Step>
+   <Step Number="9" FadeIn="0" Hold="4294967294" FadeOut="0">133</Step>
+   <Step Number="10" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L3">127</Step>
+   <Step Number="11" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2C 150%">25</Step>
+   <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0">128</Step>
+   <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1C+L4">26</Step>
+   <Step Number="14" FadeIn="0" Hold="4294967294" FadeOut="0">129</Step>
+   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L5">130</Step>
+   <Step Number="16" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2C">27</Step>
+   <Step Number="17" FadeIn="0" Hold="4294967294" FadeOut="0">131</Step>
+   <Step Number="18" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L6+L1">132</Step>
+   <Step Number="19" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2C">124</Step>
+   <Step Number="20" FadeIn="0" Hold="4294967294" FadeOut="0">0</Step>
+   <Step Number="21" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1">18</Step>
+   <Step Number="22" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2+L13">35</Step>
+   <Step Number="23" FadeIn="0" Hold="4294967294" FadeOut="0">16</Step>
+   <Step Number="24" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1">36</Step>
+   <Step Number="25" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L9">39</Step>
+   <Step Number="26" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2">22</Step>
+   <Step Number="27" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1">13</Step>
+   <Step Number="28" FadeIn="0" Hold="4294967294" FadeOut="0">42</Step>
+  </Function>
+  <Function ID="6" Type="Script" Name="04_racines">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Fsend_osc%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A2%20arg%3A10</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3A7%20arg%3A0</Command>
+  </Function>
+  <Function ID="7" Type="Script" Name="02_intro">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>%2F%2Fsystemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Frate%20arg%3Aif%20arg%3A7%20arg%3A0.67</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A7%20arg%3A3</Command>
+   <Command></Command>
+   <Command>wait%3A14s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A9%20arg%3A4</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A7%20arg%3A8</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Frewind%20arg%3Ai%20arg%3A1</Command>
+  </Function>
+  <Function ID="13" Type="Script" Name="29_8-8_final">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A9%20arg%3A2</Command>
+  </Function>
+  <Function ID="15" Type="Script" Name="08_sirene">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Fsend_osc%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3A2%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_6-2.mp4</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A12%20arg%3A7</Command>
+   <Command></Command>
+   <Command>wait%3A44s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+   <Command>systemcommand%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+  </Function>
+  <Function ID="16" Type="Script" Name="25_stop_caiman">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A11%20arg%3A3</Command>
+   <Command></Command>
+   <Command>wait%3A4s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A13%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A1%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_8-4.mp4</Command>
+  </Function>
+  <Function ID="17" Type="Script" Name="03_foret_noire_luciole">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Ais%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Ais%20arg%3A9%20arg%3A0</Command>
+   <Command></Command>
+   <Command>wait%3A34s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+  </Function>
+  <Function ID="18" Type="Script" Name="23_Sc_8-1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A1%20arg%3A1</Command>
+  </Function>
+  <Function ID="22" Type="Script" Name="28_8-6_bras">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A0</Command>
+   <Command></Command>
+   <Command>wait%3A5s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Fsend_osc%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3A1%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_8-8.mp4</Command>
+  </Function>
+  <Function ID="23" Type="Script" Name="L12O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A12%20arg%3A0</Command>
+  </Function>
+  <Function ID="24" Type="Script" Name="L12O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A12%20arg%3A1</Command>
+  </Function>
+  <Function ID="25" Type="Script" Name="12_rituel_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A2%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_7-1_rituel.mp4</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A1%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_7-2_rituel.mp4</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Frate%20arg%3Aif%20arg%3A2%20arg%3A1.5</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+  </Function>
+  <Function ID="26" Type="Script" Name="14_rituel_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Frewind</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A4%20arg%3A1</Command>
+  </Function>
+  <Function ID="27" Type="Script" Name="17_rituel_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+  </Function>
+  <Function ID="30" Type="Script" Name="06_foret_noire">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Fsend_osc%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3A9%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_5.tif</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A9%20arg%3A10</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A8%20arg%3A10</Command>
+  </Function>
+  <Function ID="35" Type="Script" Name="24_caiman">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A13%20arg%3A1</Command>
+   <Command></Command>
+   <Command>wait%3A57s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A1</Command>
+   <Command></Command>
+   <Command>%2F%2Fwait%3A58s</Command>
+   <Command></Command>
+   <Command>%2F%2Fstartfunction%3A47%20%2F%2F%2000_eric_reveilletoi_caiman.wav</Command>
+  </Function>
+  <Function ID="36" Type="Script" Name="26_8-4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A0</Command>
+  </Function>
+  <Function ID="39" Type="Script" Name="27_fin_danse">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A9%20arg%3A2</Command>
+   <Command></Command>
+   <Command>wait%3A3s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Fsend_osc%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3A2%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_8-6.mp4</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+  </Function>
+  <Function ID="42" Type="Script" Name="30_noir_fin">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A1%20arg%3A5</Command>
+  </Function>
+  <Function ID="43" Type="Script" Name="play">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+  </Function>
+  <Function ID="44" Type="Script" Name="pause">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+  </Function>
+  <Function ID="45" Type="Script" Name="rewind">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Frewind</Command>
+  </Function>
+  <Function ID="46" Type="Script" Name="05_bleux">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Ais%20arg%3A8%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Ais%20arg%3A1%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A2%20arg%3A10</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A8%20arg%3A10</Command>
+  </Function>
+  <Function ID="58" Type="Script" Name="L1O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+  </Function>
+  <Function ID="59" Type="Script" Name="L1O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+  </Function>
+  <Function ID="60" Type="Script" Name="L2O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+  </Function>
+  <Function ID="61" Type="Script" Name="L2O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+  </Function>
+  <Function ID="62" Type="Script" Name="L3O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A3%20arg%3A0</Command>
+  </Function>
+  <Function ID="63" Type="Script" Name="L3O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A3%20arg%3A1</Command>
+  </Function>
+  <Function ID="70" Type="Script" Name="L4O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A4%20arg%3A0</Command>
+  </Function>
+  <Function ID="71" Type="Script" Name="L5O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A5%20arg%3A0</Command>
+  </Function>
+  <Function ID="72" Type="Script" Name="L6O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A6%20arg%3A0</Command>
+  </Function>
+  <Function ID="73" Type="Script" Name="L7O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A7%20arg%3A0</Command>
+  </Function>
+  <Function ID="74" Type="Script" Name="L8O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A8%20arg%3A0</Command>
+  </Function>
+  <Function ID="75" Type="Script" Name="L9O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A0</Command>
+  </Function>
+  <Function ID="76" Type="Script" Name="L10O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A10%20arg%3A0</Command>
+  </Function>
+  <Function ID="77" Type="Script" Name="L11O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A11%20arg%3A0</Command>
+  </Function>
+  <Function ID="78" Type="Script" Name="L4O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A4%20arg%3A1</Command>
+  </Function>
+  <Function ID="79" Type="Script" Name="L5O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A5%20arg%3A1</Command>
+  </Function>
+  <Function ID="80" Type="Script" Name="L6O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A6%20arg%3A1</Command>
+  </Function>
+  <Function ID="81" Type="Script" Name="L7O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A7%20arg%3A1</Command>
+  </Function>
+  <Function ID="82" Type="Script" Name="L8O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A8%20arg%3A1</Command>
+  </Function>
+  <Function ID="83" Type="Script" Name="L9O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A1</Command>
+  </Function>
+  <Function ID="84" Type="Script" Name="L10O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A10%20arg%3A1</Command>
+  </Function>
+  <Function ID="85" Type="Script" Name="L11O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A11%20arg%3A1</Command>
+  </Function>
+  <Function ID="87" Type="Script" Name="L1_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A1%20arg%3A5</Command>
+  </Function>
+  <Function ID="88" Type="Script" Name="L2_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A2%20arg%3A5</Command>
+  </Function>
+  <Function ID="89" Type="Script" Name="L3_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A3%20arg%3A5</Command>
+  </Function>
+  <Function ID="90" Type="Script" Name="L4_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A4%20arg%3A5</Command>
+  </Function>
+  <Function ID="91" Type="Script" Name="L5_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A5%20arg%3A5</Command>
+  </Function>
+  <Function ID="92" Type="Script" Name="L6_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A6%20arg%3A5</Command>
+  </Function>
+  <Function ID="93" Type="Script" Name="L1_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A1%20arg%3A5</Command>
+  </Function>
+  <Function ID="94" Type="Script" Name="L2_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A2%20arg%3A5</Command>
+  </Function>
+  <Function ID="95" Type="Script" Name="L3_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A3%20arg%3A5</Command>
+  </Function>
+  <Function ID="96" Type="Script" Name="L4_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A4%20arg%3A5</Command>
+  </Function>
+  <Function ID="97" Type="Script" Name="L5_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A5%20arg%3A5</Command>
+  </Function>
+  <Function ID="98" Type="Script" Name="L6_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A6%20arg%3A5</Command>
+  </Function>
+  <Function ID="123" Type="Script" Name="_20_rituel_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+  </Function>
+  <Function ID="124" Type="Script" Name="21_rituel_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A2%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_7-5_rituel.mp4</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A6%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A6%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+   <Command></Command>
+   <Command>wait%3A30s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+  </Function>
+  <Function ID="127" Type="Script" Name="11_halo1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A3%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A3%20arg%3A1</Command>
+  </Function>
+  <Function ID="128" Type="Script" Name="13_halo1_out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A3%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A4%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A12%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A9%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A8%20arg%3A0</Command>
+  </Function>
+  <Function ID="129" Type="Script" Name="15_noir">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A3%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A4%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A2%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_7-3_rituel.mp4</Command>
+  </Function>
+  <Function ID="130" Type="Script" Name="16_halo3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A5%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A5%20arg%3A1</Command>
+  </Function>
+  <Function ID="131" Type="Script" Name="18_noir">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A5%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A5%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A1%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_7-4_rituel.mp4</Command>
+  </Function>
+  <Function ID="132" Type="Script" Name="19_halo4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A6%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A6%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+  </Function>
+  <Function ID="133" Type="Script" Name="10_noir">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A1%20arg%3A3</Command>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Liberation Sans,8,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>1</ChannelStyle>
+   <ValueStyle>1</ValueStyle>
+   <Grid Width="5" Height="5" Depth="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <CueList Caption="scripts" ID="0">
+    <WindowState Visible="True" X="0" Y="0" Width="295" Height="410"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>4</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next>
+     <Input Universe="0" Channel="193"/>
+    </Next>
+    <Previous>
+     <Input Universe="0" Channel="192"/>
+    </Previous>
+    <Playback>
+     <Input Universe="0" Channel="194"/>
+    </Playback>
+    <Stop/>
+    <SlidersMode>Crossfade</SlidersMode>
+   </CueList>
+   <Frame Caption="" ID="6">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="340" Y="30" Width="470" Height="230"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="L10O0" ID="7" Icon="">
+     <WindowState Visible="True" X="60" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="76"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="161"/>
+    </Button>
+    <Button Caption="L10O1" ID="8" Icon="">
+     <WindowState Visible="True" X="60" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="84"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="177"/>
+    </Button>
+    <Button Caption="L11O0" ID="9" Icon="">
+     <WindowState Visible="True" X="110" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="77"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="162"/>
+    </Button>
+    <Button Caption="L11O1" ID="10" Icon="">
+     <WindowState Visible="True" X="110" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="85"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="178"/>
+    </Button>
+    <Button Caption="L12O0" ID="11" Icon="">
+     <WindowState Visible="True" X="160" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="23"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="163"/>
+    </Button>
+    <Button Caption="L12O1" ID="12" Icon="">
+     <WindowState Visible="True" X="160" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="24"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="179"/>
+    </Button>
+    <Button Caption="L1O0" ID="13" Icon="">
+     <WindowState Visible="True" X="10" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="58"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="168"/>
+    </Button>
+    <Button Caption="L1O1" ID="14" Icon="">
+     <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="59"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="184"/>
+    </Button>
+    <Button Caption="L2O0" ID="15" Icon="">
+     <WindowState Visible="True" X="60" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="60"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="169"/>
+    </Button>
+    <Button Caption="L2O1" ID="16" Icon="">
+     <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="61"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="185"/>
+    </Button>
+    <Button Caption="L3O0" ID="17" Icon="">
+     <WindowState Visible="True" X="110" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="62"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="170"/>
+    </Button>
+    <Button Caption="L3O1" ID="18" Icon="">
+     <WindowState Visible="True" X="110" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="63"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="186"/>
+    </Button>
+    <Button Caption="L4O0" ID="19" Icon="">
+     <WindowState Visible="True" X="160" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="70"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="171"/>
+    </Button>
+    <Button Caption="L4O1" ID="35" Icon="">
+     <WindowState Visible="True" X="160" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="78"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="187"/>
+    </Button>
+    <Button Caption="L5O0" ID="39" Icon="">
+     <WindowState Visible="True" X="210" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="71"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="172"/>
+    </Button>
+    <Button Caption="L5O1" ID="40" Icon="">
+     <WindowState Visible="True" X="210" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="79"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="188"/>
+    </Button>
+    <Button Caption="L6O0" ID="41" Icon="">
+     <WindowState Visible="True" X="260" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="72"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="173"/>
+    </Button>
+    <Button Caption="L6O1" ID="42" Icon="">
+     <WindowState Visible="True" X="260" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="189"/>
+    </Button>
+    <Button Caption="L7O0" ID="43" Icon="">
+     <WindowState Visible="True" X="310" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="73"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="174"/>
+    </Button>
+    <Button Caption="L7O1" ID="44" Icon="">
+     <WindowState Visible="True" X="310" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="81"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="190"/>
+    </Button>
+    <Button Caption="L8O0" ID="45" Icon="">
+     <WindowState Visible="True" X="360" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="74"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="175"/>
+    </Button>
+    <Button Caption="L8O1" ID="46" Icon="">
+     <WindowState Visible="True" X="360" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="82"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="191"/>
+    </Button>
+    <Button Caption="L9O0" ID="47" Icon="">
+     <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="75"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="160"/>
+    </Button>
+    <Button Caption="L9O1" ID="48" Icon="">
+     <WindowState Visible="True" X="10" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="83"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="176"/>
+    </Button>
+    <Button Caption="pause" ID="49" Icon="">
+     <WindowState Visible="True" X="410" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="44"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="210"/>
+    </Button>
+    <Button Caption="play" ID="50" Icon="">
+     <WindowState Visible="True" X="410" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="43"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="211"/>
+    </Button>
+    <Button Caption="rewind" ID="51" Icon="">
+     <WindowState Visible="True" X="410" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="45"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="212"/>
+    </Button>
+   </Frame>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="0" Channel="56"/>
+   </GrandMaster>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>

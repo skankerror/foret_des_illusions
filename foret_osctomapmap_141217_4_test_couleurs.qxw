@@ -1,0 +1,1719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.1</Version>
+  <Author>ray</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0">
+    <Input Plugin="MIDI" Line="1" Profile="Akai APC Mini"/>
+    <Output Plugin="DMX USB" Line="0"/>
+    <Feedback Plugin="MIDI" Line="1"/>
+   </Universe>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>24 Channel</Mode>
+   <ID>0</ID>
+   <Name>Dimmers</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>24</Channels>
+  </Fixture>
+  <Function ID="0" Type="Script" Name="_22_prepa_sc8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fprepa_video_Sc_8.sh</Command>
+  </Function>
+  <Function ID="1" Type="Script" Name="09_Sc_6-3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F09_Sc_6-3.sh</Command>
+  </Function>
+  <Function ID="2" Type="Script" Name="07_Sc_6-1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F07_Sc_6-1.sh</Command>
+  </Function>
+  <Function ID="3" Type="Script" Name="01_prepa_video">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F01_prepa_video.sh</Command>
+  </Function>
+  <Function ID="4" Type="Chaser" Name="scripts_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">3</Step>
+   <Step Number="1" FadeIn="29000" Hold="4294967294" FadeOut="0" Note="L7-L9 67%">7</Step>
+   <Step Number="2" FadeIn="34000" Hold="4294967294" FadeOut="0" Note="L1">17</Step>
+   <Step Number="3" FadeIn="10000" Hold="4294967294" FadeOut="0" Note="L2">6</Step>
+   <Step Number="4" FadeIn="10000" Hold="4294967294" FadeOut="0" Note="L8">46</Step>
+   <Step Number="5" FadeIn="10000" Hold="4294967294" FadeOut="0" Note="L9">30</Step>
+   <Step Number="6" FadeIn="30000" Hold="4294967294" FadeOut="0" Note="L12">2</Step>
+   <Step Number="7" FadeIn="44000" Hold="4294967294" FadeOut="0" Note="L2">15</Step>
+   <Step Number="8" FadeIn="86000" Hold="4294967294" FadeOut="0" Note="L1">1</Step>
+   <Step Number="9" FadeIn="3000" Hold="4294967294" FadeOut="0">133</Step>
+   <Step Number="10" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L3">127</Step>
+   <Step Number="11" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2C 150%">25</Step>
+   <Step Number="12" FadeIn="0" Hold="4294967294" FadeOut="0">128</Step>
+   <Step Number="13" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1C+L4">26</Step>
+   <Step Number="14" FadeIn="0" Hold="4294967294" FadeOut="0">129</Step>
+   <Step Number="15" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L5">130</Step>
+   <Step Number="16" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L2C">27</Step>
+   <Step Number="17" FadeIn="0" Hold="4294967294" FadeOut="0">131</Step>
+   <Step Number="18" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L6+L1">132</Step>
+   <Step Number="19" FadeIn="30000" Hold="4294967294" FadeOut="0" Note="L2C">124</Step>
+   <Step Number="20" FadeIn="1000" Hold="4294967294" FadeOut="0" Note="L1">18</Step>
+   <Step Number="21" FadeIn="167500" Hold="4294967294" FadeOut="0" Note="L2+L13">35</Step>
+   <Step Number="22" FadeIn="0" Hold="4294967294" FadeOut="0" Note="L1">36</Step>
+   <Step Number="23" FadeIn="2000" Hold="4294967294" FadeOut="0" Note="L9">39</Step>
+   <Step Number="24" FadeIn="5000" Hold="4294967294" FadeOut="0" Note="L2">22</Step>
+   <Step Number="25" FadeIn="2000" Hold="4294967294" FadeOut="0" Note="L1">13</Step>
+   <Step Number="26" FadeIn="5000" Hold="4294967294" FadeOut="0">42</Step>
+  </Function>
+  <Function ID="5" Type="Audio" Name="01_intro.wav">
+   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/01_intro.wav</Source>
+  </Function>
+  <Function ID="6" Type="Script" Name="04_Sc_4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F04_Sc_4.sh</Command>
+  </Function>
+  <Function ID="7" Type="Script" Name="02_Sc1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F02_Sc1.sh</Command>
+  </Function>
+  <Function ID="8" Type="Chaser" Name="sequence_audio">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
+   <Step Number="0" FadeIn="0" Hold="4294967294" FadeOut="0">5</Step>
+   <Step Number="1" FadeIn="0" Hold="4294967294" FadeOut="0">12</Step>
+   <Step Number="2" FadeIn="0" Hold="4294967294" FadeOut="0">10</Step>
+   <Step Number="3" FadeIn="0" Hold="4294967294" FadeOut="0">11</Step>
+   <Step Number="4" FadeIn="0" Hold="4294967294" FadeOut="0">9</Step>
+   <Step Number="5" FadeIn="0" Hold="4294967294" FadeOut="0">14</Step>
+   <Step Number="6" FadeIn="0" Hold="4294967294" FadeOut="0">126</Step>
+   <Step Number="7" FadeIn="0" Hold="4294967294" FadeOut="0">5</Step>
+   <Step Number="8" FadeIn="0" Hold="4294967294" FadeOut="0">125</Step>
+   <Step Number="9" FadeIn="0" Hold="4294967294" FadeOut="0">119</Step>
+  </Function>
+  <Function ID="9" Type="Audio" Name="05_l_axtig_edit.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>son/05_l_axtig_edit.wav</Source>
+  </Function>
+  <Function ID="10" Type="Audio" Name="03_antre_du_faune_boucle.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/03_antre_du_faune_boucle.wav</Source>
+  </Function>
+  <Function ID="11" Type="Audio" Name="04_cauchemar_long.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/04_cauchemar_long.wav</Source>
+  </Function>
+  <Function ID="12" Type="Audio" Name="02_Ambiance_fin.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/02_Ambiance_fin.wav</Source>
+  </Function>
+  <Function ID="13" Type="Script" Name="26_Sc_8-8">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F26_Sc_8-8.sh</Command>
+  </Function>
+  <Function ID="14" Type="Audio" Name="08_Chant_sirene_quinte.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/08_Chant_sirene_quinte.wav</Source>
+  </Function>
+  <Function ID="15" Type="Script" Name="08_Sc_6-2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F08_Sc_6-2.sh</Command>
+  </Function>
+  <Function ID="16" Type="Script" Name="_25_stop_caiman">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A11%20arg%3A3</Command>
+   <Command></Command>
+   <Command>wait%3A4s</Command>
+   <Command></Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A13%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fmapping%2Fvisible%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Furi%20arg%3Ais%20arg%3A1%20arg%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fvideo%2FSc_8-4.mp4</Command>
+  </Function>
+  <Function ID="17" Type="Script" Name="03_Sc_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F03_Sc_3.sh</Command>
+  </Function>
+  <Function ID="18" Type="Script" Name="21_Sc_8-1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F21_Sc_8-1.sh</Command>
+  </Function>
+  <Function ID="19" Type="Chaser" Name="light">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
+   <Step Number="0" FadeIn="3000" Hold="0" FadeOut="10000">28</Step>
+   <Step Number="1" FadeIn="2000" Hold="0" FadeOut="90000">31</Step>
+   <Step Number="2" FadeIn="20000" Hold="0" FadeOut="10000">32</Step>
+   <Step Number="3" FadeIn="7000" Hold="0" FadeOut="20000">33</Step>
+   <Step Number="4" FadeIn="3000" Hold="0" FadeOut="5000">117</Step>
+   <Step Number="5" FadeIn="7000" Hold="0" FadeOut="5000">34</Step>
+   <Step Number="6" FadeIn="5000" Hold="0" FadeOut="5000">68</Step>
+   <Step Number="7" FadeIn="5000" Hold="0" FadeOut="5000">99</Step>
+   <Step Number="8" FadeIn="5000" Hold="0" FadeOut="20000">100</Step>
+   <Step Number="9" FadeIn="15000" Hold="0" FadeOut="20000">37</Step>
+   <Step Number="10" FadeIn="4000" Hold="4294967294" FadeOut="10000">52</Step>
+   <Step Number="11" FadeIn="10000" Hold="4294967294" FadeOut="5000">53</Step>
+   <Step Number="12" FadeIn="4000" Hold="0" FadeOut="4000">120</Step>
+   <Step Number="13" FadeIn="2000" Hold="4294967294" FadeOut="4000">41</Step>
+   <Step Number="14" FadeIn="2000" Hold="4294967294" FadeOut="2000">40</Step>
+   <Step Number="15" FadeIn="5000" Hold="0" FadeOut="7000">134</Step>
+   <Step Number="16" FadeIn="2000" Hold="0" FadeOut="7000">107</Step>
+   <Step Number="17" FadeIn="2000" Hold="0" FadeOut="4000">135</Step>
+   <Step Number="18" FadeIn="0" Hold="4294967294" FadeOut="0">40</Step>
+   <Step Number="19" FadeIn="3000" Hold="0" FadeOut="3000">65</Step>
+   <Step Number="20" FadeIn="3000" Hold="0" FadeOut="3000">66</Step>
+   <Step Number="21" FadeIn="3000" Hold="0" FadeOut="3000">67</Step>
+   <Step Number="22" FadeIn="3000" Hold="0" FadeOut="3000">106</Step>
+  </Function>
+  <Function ID="20" Type="Audio" Name="underwater_boucle.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/underwater_boucle.wav</Source>
+  </Function>
+  <Function ID="21" Type="Audio" Name="eau_vague_monte.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>son/eau_vague_monte.wav</Source>
+  </Function>
+  <Function ID="22" Type="Script" Name="25_Sc_8-6">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F25_Sc_8-6.sh</Command>
+  </Function>
+  <Function ID="23" Type="Script" Name="L12O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A12%20arg%3A0</Command>
+  </Function>
+  <Function ID="24" Type="Script" Name="L12O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A12%20arg%3A1</Command>
+  </Function>
+  <Function ID="25" Type="Script" Name="12_Sc_7-1_rituel">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F12_Sc_7-1_rituel.sh</Command>
+  </Function>
+  <Function ID="26" Type="Script" Name="14_Sc_7-2_rituel">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F14_Sc_7-2_rituel.sh</Command>
+  </Function>
+  <Function ID="27" Type="Script" Name="17_Sc_7-3_rituel">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F17_Sc_7-3_rituel.sh</Command>
+  </Function>
+  <Function ID="28" Type="Scene" Name="01_douche_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,60,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="29" Type="Audio" Name="01_lettre_mamy2.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/01_lettre_mamy2.wav</Source>
+  </Function>
+  <Function ID="30" Type="Script" Name="06_Sc_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F06_Sc_5.sh</Command>
+  </Function>
+  <Function ID="31" Type="Scene" Name="02_douche_2_5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,60,10,0,11,0,12,0,13,60,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="32" Type="Scene" Name="03_rencontre">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,116,1,0,2,116,3,117,4,159,5,0,6,149,7,0,8,97,9,0,10,0,11,0,12,0,13,0,14,0,15,55</FixtureVal>
+  </Function>
+  <Function ID="33" Type="Scene" Name="04_nuit">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,155,5,255,6,159,7,255,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="34" Type="Scene" Name="05_nuit_rouge">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,104,2,0,3,0,4,0,5,137,6,0,7,136,8,0,9,0,10,78,11,0,12,79,13,0,14,0,15,160</FixtureVal>
+  </Function>
+  <Function ID="35" Type="Script" Name="22_Sc_8-2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F22_Sc_8-2.sh</Command>
+  </Function>
+  <Function ID="36" Type="Script" Name="23_Sc_8-4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F23_Sc_8-4.sh</Command>
+  </Function>
+  <Function ID="37" Type="Scene" Name="09bis_sirene_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,100,10,0,11,0,12,0,13,0,14,255,15,0</FixtureVal>
+  </Function>
+  <Function ID="38" Type="Scene" Name="09_sirene_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,255,8,0,9,207,10,0,11,0,12,0,13,0,14,255,15,0</FixtureVal>
+  </Function>
+  <Function ID="39" Type="Script" Name="24_Sc_8-5">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F24_Sc_8-5.sh</Command>
+  </Function>
+  <Function ID="40" Type="Scene" Name="NOIR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="41" Type="Scene" Name="Sc_7_incantation_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,94,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,138</FixtureVal>
+  </Function>
+  <Function ID="42" Type="Script" Name="27_NOIR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F27_NOIR.sh</Command>
+  </Function>
+  <Function ID="43" Type="Script" Name="play">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fplay</Command>
+  </Function>
+  <Function ID="44" Type="Script" Name="pause">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpause</Command>
+  </Function>
+  <Function ID="45" Type="Script" Name="rewind">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Frewind</Command>
+  </Function>
+  <Function ID="46" Type="Script" Name="05_Sc_4_bleux">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F05_Sc_4_bleux.sh</Command>
+  </Function>
+  <Function ID="47" Type="Audio" Name="00_eric_reveilletoi_caiman.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/00_eric_reveilletoi_caiman.wav</Source>
+  </Function>
+  <Function ID="48" Type="Audio" Name="01_lettre_granmere.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/01_lettre_granmere.wav</Source>
+  </Function>
+  <Function ID="49" Type="Audio" Name="02_eric_passuivre.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/02_eric_passuivre.wav</Source>
+  </Function>
+  <Function ID="50" Type="Audio" Name="03_caim1.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/03_caim1.wav</Source>
+  </Function>
+  <Function ID="51" Type="Audio" Name="04_caim2.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/04_caim2.wav</Source>
+  </Function>
+  <Function ID="52" Type="Scene" Name="09ter_sirene_sortie">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,178,5,179,6,0,7,0,8,156,9,118,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Scene" Name="10_sirene_mangrove">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,89,1,115,2,0,3,0,4,134,5,255,6,131,7,255,8,110,9,0,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Audio" Name="05_caim3.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/05_caim3.wav</Source>
+  </Function>
+  <Function ID="55" Type="Audio" Name="07_eric.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/07_eric.wav</Source>
+  </Function>
+  <Function ID="56" Type="Scene" Name="_Sc_fin_01">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,255,8,0,9,0,10,0,11,0,12,117,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="57" Type="Scene" Name="_Sc_fin_02">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,255,8,0,9,0,10,0,11,136,12,117,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="58" Type="Script" Name="L1O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A0</Command>
+  </Function>
+  <Function ID="59" Type="Script" Name="L1O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A1%20arg%3A1</Command>
+  </Function>
+  <Function ID="60" Type="Script" Name="L2O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A0</Command>
+  </Function>
+  <Function ID="61" Type="Script" Name="L2O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A2%20arg%3A1</Command>
+  </Function>
+  <Function ID="62" Type="Script" Name="L3O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A3%20arg%3A0</Command>
+  </Function>
+  <Function ID="63" Type="Script" Name="L3O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A3%20arg%3A1</Command>
+  </Function>
+  <Function ID="64" Type="Chaser" Name="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">48</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">49</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">50</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">51</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0">54</Step>
+   <Step Number="5" FadeIn="0" Hold="0" FadeOut="0">55</Step>
+   <Step Number="6" FadeIn="0" Hold="0" FadeOut="0">69</Step>
+   <Step Number="7" FadeIn="0" Hold="0" FadeOut="0">118</Step>
+   <Step Number="8" FadeIn="0" Hold="0" FadeOut="0">136</Step>
+   <Step Number="9" FadeIn="0" Hold="0" FadeOut="0">137</Step>
+   <Step Number="10" FadeIn="0" Hold="0" FadeOut="0">138</Step>
+   <Step Number="11" FadeIn="0" Hold="0" FadeOut="0">139</Step>
+   <Step Number="12" FadeIn="0" Hold="0" FadeOut="0">140</Step>
+   <Step Number="13" FadeIn="0" Hold="0" FadeOut="0">141</Step>
+   <Step Number="14" FadeIn="0" Hold="0" FadeOut="0">142</Step>
+   <Step Number="15" FadeIn="0" Hold="0" FadeOut="0">143</Step>
+   <Step Number="16" FadeIn="0" Hold="0" FadeOut="0">144</Step>
+  </Function>
+  <Function ID="65" Type="Scene" Name="saluts1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,200,2,204,3,255,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,149,15,0</FixtureVal>
+  </Function>
+  <Function ID="66" Type="Scene" Name="saluts2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,230,9,0,10,0,11,0,12,0,13,0,14,159,15,0</FixtureVal>
+  </Function>
+  <Function ID="67" Type="Scene" Name="saluts3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,255,7,255,8,0,9,0,10,0,11,0,12,0,13,0,14,255,15,0</FixtureVal>
+  </Function>
+  <Function ID="68" Type="Scene" Name="06_120917_nuit_rouge">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,57,1,195,2,65,3,0,4,208,5,220,6,208,7,217,8,128,9,98,10,109,11,139,12,109,13,98,14,0,15,97</FixtureVal>
+  </Function>
+  <Function ID="69" Type="Audio" Name="08_eric_.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/08_eric_.wav</Source>
+  </Function>
+  <Function ID="70" Type="Script" Name="L4O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A4%20arg%3A0</Command>
+  </Function>
+  <Function ID="71" Type="Script" Name="L5O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A5%20arg%3A0</Command>
+  </Function>
+  <Function ID="72" Type="Script" Name="L6O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A6%20arg%3A0</Command>
+  </Function>
+  <Function ID="73" Type="Script" Name="L7O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A7%20arg%3A0</Command>
+  </Function>
+  <Function ID="74" Type="Script" Name="L8O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A8%20arg%3A0</Command>
+  </Function>
+  <Function ID="75" Type="Script" Name="L9O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A0</Command>
+  </Function>
+  <Function ID="76" Type="Script" Name="L10O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A10%20arg%3A0</Command>
+  </Function>
+  <Function ID="77" Type="Script" Name="L11O0">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A11%20arg%3A0</Command>
+  </Function>
+  <Function ID="78" Type="Script" Name="L4O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A4%20arg%3A1</Command>
+  </Function>
+  <Function ID="79" Type="Script" Name="L5O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A5%20arg%3A1</Command>
+  </Function>
+  <Function ID="80" Type="Script" Name="L6O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A6%20arg%3A1</Command>
+  </Function>
+  <Function ID="81" Type="Script" Name="L7O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A7%20arg%3A1</Command>
+  </Function>
+  <Function ID="82" Type="Script" Name="L8O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A8%20arg%3A1</Command>
+  </Function>
+  <Function ID="83" Type="Script" Name="L9O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A9%20arg%3A1</Command>
+  </Function>
+  <Function ID="84" Type="Script" Name="L10O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A10%20arg%3A1</Command>
+  </Function>
+  <Function ID="85" Type="Script" Name="L11O1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fusr%2Fbin%2Foscsend%20arg%3Alocalhost%20arg%3A12345%20arg%3A%2Fmapmap%2Fpaint%2Fopacity%20arg%3Aif%20arg%3A11%20arg%3A1</Command>
+  </Function>
+  <Function ID="86" Type="Scene" Name="08_120917_nuit_foret">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,255,2,104,3,53,4,255,5,255,6,255,7,255,8,0,9,236,10,0,11,239,12,229,13,229,14,0,15,255</FixtureVal>
+  </Function>
+  <Function ID="87" Type="Script" Name="L1_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A1%20arg%3A5</Command>
+  </Function>
+  <Function ID="88" Type="Script" Name="L2_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A2%20arg%3A5</Command>
+  </Function>
+  <Function ID="89" Type="Script" Name="L3_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A3%20arg%3A5</Command>
+  </Function>
+  <Function ID="90" Type="Script" Name="L4_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A4%20arg%3A5</Command>
+  </Function>
+  <Function ID="91" Type="Script" Name="L5_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A5%20arg%3A5</Command>
+  </Function>
+  <Function ID="92" Type="Script" Name="L6_D5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_down.sh%20arg%3A6%20arg%3A5</Command>
+  </Function>
+  <Function ID="93" Type="Script" Name="L1_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A1%20arg%3A5</Command>
+  </Function>
+  <Function ID="94" Type="Script" Name="L2_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A2%20arg%3A5</Command>
+  </Function>
+  <Function ID="95" Type="Script" Name="L3_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A3%20arg%3A5</Command>
+  </Function>
+  <Function ID="96" Type="Script" Name="L4_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A4%20arg%3A5</Command>
+  </Function>
+  <Function ID="97" Type="Script" Name="L5_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A5%20arg%3A5</Command>
+  </Function>
+  <Function ID="98" Type="Script" Name="L6_U5s">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2Fopacity_mapmap_up.sh%20arg%3A6%20arg%3A5</Command>
+  </Function>
+  <Function ID="99" Type="Scene" Name="08_120917_sirene1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,178,5,0,6,198,7,0,8,0,9,150,10,0,11,186,12,150,13,150,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="100" Type="Scene" Name="09_120917_sirene2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,157,5,0,6,175,7,134,8,0,9,113,10,183,11,137,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="101" Type="Scene" Name="_Sc_fin_03">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,255,8,81,9,0,10,0,11,106,12,0,13,95,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="102" Type="Scene" Name="_Sc_fin_04">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,255,8,81,9,0,10,0,11,0,12,0,13,95,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="103" Type="Scene" Name="_Sc_fin_05">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,255,8,100,9,0,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="104" Type="Scene" Name="_Sc_fin_06">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,255,5,255,6,255,7,255,8,0,9,133,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="105" Type="Scene" Name="_Sc_fin_07">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,49,2,0,3,212,4,0,5,0,6,0,7,0,8,79,9,0,10,0,11,0,12,0,13,0,14,0,15,62</FixtureVal>
+  </Function>
+  <Function ID="106" Type="Scene" Name="saluts4">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,255,2,185,3,255,4,0,5,0,6,255,7,0,8,234,9,0,10,0,11,0,12,0,13,0,14,205,15,0</FixtureVal>
+  </Function>
+  <Function ID="107" Type="Scene" Name="Sc_8_1bis_reveil">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,163,4,154,5,204,6,147,7,203,8,133,9,0,10,144,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0</FixtureVal>
+  </Function>
+  <Function ID="116" Type="Audio" Name="eric_reveille-toi_stretch_rev.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/eric_reveille-toi_stretch_rev.wav</Source>
+  </Function>
+  <Function ID="117" Type="Scene" Name="04bis_nuit2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,175,1,0,2,92,3,147,4,155,5,200,6,155,7,194,8,57,9,0,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="118" Type="Audio" Name="09_un_souffle.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/09_un_souffle.wav</Source>
+  </Function>
+  <Function ID="119" Type="Audio" Name="helico_monte.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/helico_monte.wav</Source>
+  </Function>
+  <Function ID="120" Type="Scene" Name="Sc_7_incantation_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,147,2,0,3,0,4,120,5,209,6,119,7,205,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,137</FixtureVal>
+  </Function>
+  <Function ID="121" Type="Scene" Name="Sc_7_incantation_2">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,109,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,81</FixtureVal>
+  </Function>
+  <Function ID="122" Type="Audio" Name="goutte_delai.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>son/goutte_delai.wav</Source>
+  </Function>
+  <Function ID="124" Type="Script" Name="20_Sc_7-5-rituel">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F20_Sc_7-5_rituel.sh</Command>
+  </Function>
+  <Function ID="125" Type="Audio" Name="09_peau_caiman2.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>son/09_peau_caiman2.wav</Source>
+  </Function>
+  <Function ID="126" Type="Audio" Name="09_rituel_sirene.wav">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>Loop</RunOrder>
+   <Source>son/09_rituel_sirene.wav</Source>
+  </Function>
+  <Function ID="127" Type="Script" Name="11_Halo_1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F11_Halo_1.sh</Command>
+  </Function>
+  <Function ID="128" Type="Script" Name="13_Halo_1_out">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F13_Halo_1_out.sh</Command>
+  </Function>
+  <Function ID="129" Type="Script" Name="15_NOIR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F15_NOIR.sh</Command>
+  </Function>
+  <Function ID="130" Type="Script" Name="16_Halo_3">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F16_Halo_3.sh</Command>
+  </Function>
+  <Function ID="131" Type="Script" Name="18_NOIR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F18_NOIR.sh</Command>
+  </Function>
+  <Function ID="132" Type="Script" Name="19_Sc_7-4_rituel">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F19_Sc_7-4_rituel.sh</Command>
+  </Function>
+  <Function ID="133" Type="Script" Name="10_NOIR">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Command>systemcommand%3A%2Fhome%2Fray%2Fboulot%2Fcueilleurs_de_brume%2Fforet%2Fscripts%2F10_NOIR.sh</Command>
+  </Function>
+  <Function ID="134" Type="Scene" Name="Sc_8_1_reveil">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,163,4,154,5,204,6,0,7,0,8,115,9,0,10,0,11,0,12,0,13,0,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="135" Type="Scene" Name="Sc_8_2_reveil">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="0">0,108,1,0,2,114,3,154,4,0,5,209,6,195,7,211,8,95,9,98,10,0,11,96,12,91,13,93,14,0,15,0</FixtureVal>
+  </Function>
+  <Function ID="136" Type="Audio" Name="10_cette_foret.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/10_cette_foret.wav</Source>
+  </Function>
+  <Function ID="137" Type="Audio" Name="11_alendroitdufeu.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/11_alendroitdufeu.wav</Source>
+  </Function>
+  <Function ID="138" Type="Audio" Name="12_cesonttessouvenirs.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/12_cesonttessouvenirs.wav</Source>
+  </Function>
+  <Function ID="139" Type="Audio" Name="13_quevastufaire.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/13_quevastufaire.wav</Source>
+  </Function>
+  <Function ID="140" Type="Audio" Name="14_energie_pure.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/14_energie_pure.wav</Source>
+  </Function>
+  <Function ID="141" Type="Audio" Name="15_chemin.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/15_chemin.wav</Source>
+  </Function>
+  <Function ID="142" Type="Audio" Name="16_reveille_toi.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/16_reveille_toi.wav</Source>
+  </Function>
+  <Function ID="143" Type="Audio" Name="17_reveille_toi_2.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/17_reveille_toi_2.wav</Source>
+  </Function>
+  <Function ID="144" Type="Audio" Name="18_cestlui.wav" Path="voix_off">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <RunOrder>SingleShot</RunOrder>
+   <Source>son/voix_off/18_cestlui.wav</Source>
+  </Function>
+  <Monitor DisplayMode="0" ShowLabels="0">
+   <Font>Liberation Sans,8,-1,5,50,0,0,0,0,0</Font>
+   <ChannelStyle>1</ChannelStyle>
+   <ValueStyle>1</ValueStyle>
+   <Grid Width="5" Height="5" Depth="5" Units="0"/>
+  </Monitor>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>4287138437</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <CueList Caption="scripts" ID="0">
+    <WindowState Visible="True" X="0" Y="0" Width="515" Height="405"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4289560488</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>4</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next>
+     <Input Universe="0" Channel="135"/>
+    </Next>
+    <Previous>
+     <Input Universe="0" Channel="134"/>
+    </Previous>
+    <Playback>
+     <Input Universe="0" Channel="217"/>
+    </Playback>
+    <Stop/>
+    <SlidersMode>Crossfade</SlidersMode>
+   </CueList>
+   <Frame Caption="" ID="20">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4285702095</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="0" Y="405" Width="815" Height="140"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Slider Caption="F136" ID="22" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="10" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0"/>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="W_AS" ID="23" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="100" Y="10" Width="60" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">2</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="B_MS" ID="24" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="155" Y="10" Width="50" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">4</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="B_FS" ID="25" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="205" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">6</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="V_MS" ID="26" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="300" Y="10" Width="50" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">5</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="V_FS" ID="27" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="350" Y="10" Width="50" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">7</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="R_AS" ID="29" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="400" Y="10" Width="50" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">15</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="D1" ID="30" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="450" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">9</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="D2" ID="31" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="495" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">11</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="D3" ID="32" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="540" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">10</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="D4" ID="33" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="585" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">12</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="D5" ID="34" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="630" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">13</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="V_AS" ID="36" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="250" Y="10" Width="50" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">3</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Cent" ID="37" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="675" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">8</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+    <Slider Caption="Omb" ID="38" WidgetStyle="Slider" InvertedAppearance="false">
+     <WindowState Visible="True" X="720" Y="10" Width="45" Height="125"/>
+     <Appearance>
+      <FrameStyle>Sunken</FrameStyle>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4285702095</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+     <Level LowLimit="0" HighLimit="255" Value="0">
+      <Channel Fixture="0">14</Channel>
+     </Level>
+     <Playback>
+      <Function>4294967295</Function>
+     </Playback>
+    </Slider>
+   </Frame>
+   <CueList Caption="light" ID="63">
+    <WindowState Visible="True" X="515" Y="0" Width="310" Height="405"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278255360</ForegroundColor>
+     <BackgroundColor>4285702095</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>19</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next>
+     <Input Universe="0" Channel="143"/>
+    </Next>
+    <Previous>
+     <Input Universe="0" Channel="142"/>
+    </Previous>
+    <Playback>
+     <Input Universe="0" Channel="216"/>
+    </Playback>
+    <Stop/>
+    <SlidersMode>Crossfade</SlidersMode>
+   </CueList>
+   <CueList Caption="Cue list" ID="64">
+    <WindowState Visible="True" X="1025" Y="0" Width="275" Height="405"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294750014</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>8</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next>
+     <Input Universe="0" Channel="151"/>
+    </Next>
+    <Previous>
+     <Input Universe="0" Channel="150"/>
+    </Previous>
+    <Playback>
+     <Input Universe="0" Channel="215"/>
+    </Playback>
+    <Stop/>
+    <SlidersMode>Crossfade</SlidersMode>
+    <CrossLeft>
+     <Input Universe="0" Channel="49"/>
+    </CrossLeft>
+    <CrossRight>
+     <Input Universe="0" Channel="50"/>
+    </CrossRight>
+   </CueList>
+   <Slider Caption="F106" ID="1" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="55" Y="415" Width="45" Height="125"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4285702095</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="0">1</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="underW" ID="2" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="935" Y="405" Width="50" Height="140"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4294750014</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="55"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>20</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="eau" ID="3" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="885" Y="405" Width="45" Height="140"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4294750014</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="54"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>21</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="goutte" ID="4" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="825" Y="405" Width="55" Height="140"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4294750014</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="53"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>122</Function>
+    </Playback>
+   </Slider>
+   <CueList Caption="Cue list" ID="5">
+    <WindowState Visible="True" X="825" Y="0" Width="200" Height="405"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>4294750014</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Chaser>64</Chaser>
+    <NextPrevBehavior>0</NextPrevBehavior>
+    <Next>
+     <Input Universe="0" Channel="159"/>
+    </Next>
+    <Previous>
+     <Input Universe="0" Channel="158"/>
+    </Previous>
+    <Playback>
+     <Input Universe="0" Channel="214"/>
+    </Playback>
+    <Stop/>
+    <SlidersMode>Crossfade</SlidersMode>
+   </CueList>
+   <Frame Caption="" ID="6">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="0" Y="545" Width="470" Height="230"/>
+    <AllowChildren>False</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>False</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="L10O0" ID="7" Icon="">
+     <WindowState Visible="True" X="60" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="76"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="161"/>
+    </Button>
+    <Button Caption="L10O1" ID="8" Icon="">
+     <WindowState Visible="True" X="60" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="84"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="177"/>
+    </Button>
+    <Button Caption="L11O0" ID="9" Icon="">
+     <WindowState Visible="True" X="110" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="77"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="162"/>
+    </Button>
+    <Button Caption="L11O1" ID="10" Icon="">
+     <WindowState Visible="True" X="110" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="85"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="178"/>
+    </Button>
+    <Button Caption="L12O0" ID="11" Icon="">
+     <WindowState Visible="True" X="160" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="23"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="163"/>
+    </Button>
+    <Button Caption="L12O1" ID="12" Icon="">
+     <WindowState Visible="True" X="160" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="24"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="179"/>
+    </Button>
+    <Button Caption="L1O0" ID="13" Icon="">
+     <WindowState Visible="True" X="10" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="58"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="168"/>
+    </Button>
+    <Button Caption="L1O1" ID="14" Icon="">
+     <WindowState Visible="True" X="10" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="59"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="184"/>
+    </Button>
+    <Button Caption="L2O0" ID="15" Icon="">
+     <WindowState Visible="True" X="60" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="60"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="169"/>
+    </Button>
+    <Button Caption="L2O1" ID="16" Icon="">
+     <WindowState Visible="True" X="60" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="61"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="185"/>
+    </Button>
+    <Button Caption="L3O0" ID="17" Icon="">
+     <WindowState Visible="True" X="110" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="62"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="170"/>
+    </Button>
+    <Button Caption="L3O1" ID="18" Icon="">
+     <WindowState Visible="True" X="110" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="63"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="186"/>
+    </Button>
+    <Button Caption="L4O0" ID="19" Icon="">
+     <WindowState Visible="True" X="160" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="70"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="171"/>
+    </Button>
+    <Button Caption="L4O1" ID="35" Icon="">
+     <WindowState Visible="True" X="160" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="78"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="187"/>
+    </Button>
+    <Button Caption="L5O0" ID="39" Icon="">
+     <WindowState Visible="True" X="210" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="71"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="172"/>
+    </Button>
+    <Button Caption="L5O1" ID="40" Icon="">
+     <WindowState Visible="True" X="210" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="79"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="188"/>
+    </Button>
+    <Button Caption="L6O0" ID="41" Icon="">
+     <WindowState Visible="True" X="260" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="72"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="173"/>
+    </Button>
+    <Button Caption="L6O1" ID="42" Icon="">
+     <WindowState Visible="True" X="260" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="80"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="189"/>
+    </Button>
+    <Button Caption="L7O0" ID="43" Icon="">
+     <WindowState Visible="True" X="310" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="73"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="174"/>
+    </Button>
+    <Button Caption="L7O1" ID="44" Icon="">
+     <WindowState Visible="True" X="310" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="81"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="190"/>
+    </Button>
+    <Button Caption="L8O0" ID="45" Icon="">
+     <WindowState Visible="True" X="360" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="74"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="175"/>
+    </Button>
+    <Button Caption="L8O1" ID="46" Icon="">
+     <WindowState Visible="True" X="360" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="82"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="191"/>
+    </Button>
+    <Button Caption="L9O0" ID="47" Icon="">
+     <WindowState Visible="True" X="10" Y="160" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="75"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="160"/>
+    </Button>
+    <Button Caption="L9O1" ID="48" Icon="">
+     <WindowState Visible="True" X="10" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="83"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="176"/>
+    </Button>
+    <Button Caption="pause" ID="49" Icon="">
+     <WindowState Visible="True" X="410" Y="10" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="44"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="210"/>
+    </Button>
+    <Button Caption="play" ID="50" Icon="">
+     <WindowState Visible="True" X="410" Y="60" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="43"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="211"/>
+    </Button>
+    <Button Caption="rewind" ID="51" Icon="">
+     <WindowState Visible="True" X="410" Y="110" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="45"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+     <Input Universe="0" Channel="212"/>
+    </Button>
+   </Frame>
+   <Button Caption="00_eric_reveilletoi_caiman.wav" ID="52" Icon="">
+    <WindowState Visible="True" X="1030" Y="440" Width="50" Height="50"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="47"/>
+    <Action>Toggle</Action>
+    <Intensity Adjust="False">100</Intensity>
+    <Input Universe="0" Channel="213"/>
+   </Button>
+   <Slider Caption="salle" ID="21" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="765" Y="415" Width="45" Height="125"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4285702095</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="48"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="0">23</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal">
+    <Input Universe="0" Channel="56"/>
+   </GrandMaster>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>

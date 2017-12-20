@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapmap>
+<project version="0.5.0">
+  <paints>
+    <paint name="layer_vid_1" locked="false" id="1" className="Video">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_3-1.mp4</uri>
+      <volume>1</volume>
+      <rate>1</rate>
+      <x>-667</x>
+      <y>-246</y>
+    </paint>
+    <paint name="layer_vid_2" locked="false" id="2" className="Video">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_4.mp4</uri>
+      <volume>1</volume>
+      <rate>1</rate>
+      <x>-667</x>
+      <y>-246</y>
+    </paint>
+    <paint name="halo1_p3" locked="false" id="3" className="Image">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_7_1_halo.gif</uri>
+      <rate>1</rate>
+      <x>-155</x>
+      <y>-246</y>
+    </paint>
+    <paint name="halo2_p4" locked="false" id="4" className="Image">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_7_1_halo.gif</uri>
+      <rate>1</rate>
+      <x>-155</x>
+      <y>-246</y>
+    </paint>
+    <paint name="halo3_p5" locked="false" id="5" className="Image">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_7_1_halo.gif</uri>
+      <rate>1</rate>
+      <x>-155</x>
+      <y>-246</y>
+    </paint>
+    <paint name="halo4_p6" locked="false" id="6" className="Image">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_7_1_halo.gif</uri>
+      <rate>1</rate>
+      <x>-155</x>
+      <y>-246</y>
+    </paint>
+    <paint name="vid_intro_p7" locked="false" id="7" className="Video">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_1.mp4</uri>
+      <volume>1</volume>
+      <rate>1</rate>
+      <x>-667</x>
+      <y>-246</y>
+    </paint>
+    <paint name="Bleu_p8" locked="false" id="8" className="Color">
+      <opacity>0</opacity>
+      <color>#7800ff</color>
+    </paint>
+    <paint name="layer_photo_1_p9" locked="false" id="9" className="Image">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_2.tif</uri>
+      <rate>1</rate>
+      <x>-667</x>
+      <y>-246</y>
+    </paint>
+    <paint name="Noir_p10" locked="false" id="10" className="Color">
+      <opacity>1</opacity>
+      <color>#000000</color>
+    </paint>
+    <paint name="caiman_p11_m13" locked="false" id="11" className="Video">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_8-caiman.mp4</uri>
+      <volume>1</volume>
+      <rate>1</rate>
+      <x>-710</x>
+      <y>-246</y>
+    </paint>
+    <paint name="layer_photo_2_p12" locked="false" id="12" className="Image">
+      <opacity>0</opacity>
+      <uri>/home/ray/boulot/cueilleurs_de_brume/foret/video/Sc_6-1.png</uri>
+      <rate>1</rate>
+      <x>-667</x>
+      <y>-246</y>
+    </paint>
+  </paints>
+  <mappings>
+    <mapping name="Mesh 1" visible="false" locked="true" paintId="1" id="1" depth="0" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-283" x="-332"/>
+          <vertex y="-280" x="-180"/>
+          <vertex y="-279" x="-68"/>
+          <vertex y="-279" x="81"/>
+          <vertex y="-276" x="286"/>
+          <vertex y="-271" x="446"/>
+          <vertex y="237" x="-337"/>
+          <vertex y="235" x="-178"/>
+          <vertex y="235" x="-63"/>
+          <vertex y="231" x="72"/>
+          <vertex y="229" x="278"/>
+          <vertex y="227" x="436"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-191.8" x="-33.6"/>
+          <vertex y="-193.2" x="156.8"/>
+          <vertex y="-194.6" x="270.2"/>
+          <vertex y="-194.6" x="415.8"/>
+          <vertex y="-193.2" x="571.2"/>
+          <vertex y="-189.336" x="746.368"/>
+          <vertex y="430.808" x="-30.184"/>
+          <vertex y="428.064" x="156.408"/>
+          <vertex y="428.4" x="281.4"/>
+          <vertex y="425.6" x="422.8"/>
+          <vertex y="425.6" x="568.4"/>
+          <vertex y="429.8" x="751.8"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 2" visible="false" locked="true" paintId="2" id="2" depth="1" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-283" x="-332"/>
+          <vertex y="-280" x="-180"/>
+          <vertex y="-279" x="-68"/>
+          <vertex y="-279" x="81"/>
+          <vertex y="-276" x="286"/>
+          <vertex y="-271" x="446"/>
+          <vertex y="237" x="-337"/>
+          <vertex y="235" x="-178"/>
+          <vertex y="235" x="-63"/>
+          <vertex y="231" x="72"/>
+          <vertex y="229" x="278"/>
+          <vertex y="227" x="436"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-191.8" x="-33.6"/>
+          <vertex y="-193.2" x="156.8"/>
+          <vertex y="-194.6" x="270.2"/>
+          <vertex y="-194.6" x="415.8"/>
+          <vertex y="-193.2" x="571.2"/>
+          <vertex y="-189.336" x="746.368"/>
+          <vertex y="430.808" x="-30.184"/>
+          <vertex y="428.064" x="156.408"/>
+          <vertex y="428.4" x="281.4"/>
+          <vertex y="425.6" x="422.8"/>
+          <vertex y="425.6" x="568.4"/>
+          <vertex y="429.8" x="751.8"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 9" visible="true" locked="true" paintId="9" id="9" depth="2" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-283" x="-332"/>
+          <vertex y="-280" x="-180"/>
+          <vertex y="-279" x="-68"/>
+          <vertex y="-279" x="81"/>
+          <vertex y="-276" x="286"/>
+          <vertex y="-271" x="446"/>
+          <vertex y="237" x="-337"/>
+          <vertex y="235" x="-178"/>
+          <vertex y="235" x="-63"/>
+          <vertex y="231" x="72"/>
+          <vertex y="229" x="278"/>
+          <vertex y="227" x="436"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-191.8" x="-33.6"/>
+          <vertex y="-193.2" x="156.8"/>
+          <vertex y="-194.6" x="270.2"/>
+          <vertex y="-194.6" x="415.8"/>
+          <vertex y="-193.2" x="571.2"/>
+          <vertex y="-189.336" x="746.368"/>
+          <vertex y="430.808" x="-30.184"/>
+          <vertex y="428.064" x="156.408"/>
+          <vertex y="428.4" x="281.4"/>
+          <vertex y="425.6" x="422.8"/>
+          <vertex y="425.6" x="568.4"/>
+          <vertex y="429.8" x="751.8"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 12" visible="false" locked="true" paintId="12" id="12" depth="3" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-283" x="-332"/>
+          <vertex y="-280" x="-180"/>
+          <vertex y="-279" x="-68"/>
+          <vertex y="-279" x="81"/>
+          <vertex y="-276" x="286"/>
+          <vertex y="-271" x="446"/>
+          <vertex y="237" x="-337"/>
+          <vertex y="235" x="-178"/>
+          <vertex y="235" x="-63"/>
+          <vertex y="231" x="72"/>
+          <vertex y="229" x="278"/>
+          <vertex y="227" x="436"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>6</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-191.8" x="-33.6"/>
+          <vertex y="-193.2" x="156.8"/>
+          <vertex y="-194.6" x="270.2"/>
+          <vertex y="-194.6" x="415.8"/>
+          <vertex y="-193.2" x="571.2"/>
+          <vertex y="-189.336" x="746.368"/>
+          <vertex y="430.808" x="-30.184"/>
+          <vertex y="428.064" x="156.408"/>
+          <vertex y="428.4" x="281.4"/>
+          <vertex y="425.6" x="422.8"/>
+          <vertex y="425.6" x="568.4"/>
+          <vertex y="429.8" x="751.8"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 3" visible="false" locked="true" paintId="3" id="3" depth="4" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-259.24" x="-659.704"/>
+          <vertex y="-270.765" x="104.774"/>
+          <vertex y="366.941" x="-582.872"/>
+          <vertex y="336.208" x="77.883"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-246" x="-155"/>
+          <vertex y="-246" x="869"/>
+          <vertex y="522" x="-155"/>
+          <vertex y="522" x="869"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 4" visible="false" locked="true" paintId="4" id="4" depth="5" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-259.032" x="-20.784"/>
+          <vertex y="-285.923" x="716.803"/>
+          <vertex y="405.565" x="-20.784"/>
+          <vertex y="378.674" x="716.803"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-246" x="-155"/>
+          <vertex y="-246" x="869"/>
+          <vertex y="522" x="-155"/>
+          <vertex y="522" x="869"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 5" visible="false" locked="true" paintId="5" id="5" depth="6" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-296.368" x="-230.288"/>
+          <vertex y="-288.685" x="564.923"/>
+          <vertex y="360.546" x="-230.288"/>
+          <vertex y="375.912" x="572.606"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-246" x="-155"/>
+          <vertex y="-246" x="869"/>
+          <vertex y="522" x="-155"/>
+          <vertex y="522" x="869"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 6" visible="false" locked="true" paintId="6" id="6" depth="7" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-289.4" x="-513.88"/>
+          <vertex y="-312.92" x="207.4"/>
+          <vertex y="315.456" x="-474.21"/>
+          <vertex y="335.84" x="227"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-246" x="-155"/>
+          <vertex y="-246" x="869"/>
+          <vertex y="522" x="-155"/>
+          <vertex y="522" x="869"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 7" visible="true" locked="true" paintId="7" id="7" depth="8" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-242" x="-355"/>
+          <vertex y="-246" x="445"/>
+          <vertex y="200" x="-334"/>
+          <vertex y="199.92" x="437.08"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-176.4" x="-666.4"/>
+          <vertex y="-186.2" x="356.72"/>
+          <vertex y="458.64" x="-666.4"/>
+          <vertex y="462.56" x="358.68"/>
+        </vertices>
+      </source>
+    </mapping>
+    <mapping name="Mesh 8" visible="false" locked="true" paintId="8" id="8" depth="9" className="ColorMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-242" x="-348"/>
+          <vertex y="-247" x="443"/>
+          <vertex y="193" x="-345"/>
+          <vertex y="193" x="431"/>
+        </vertices>
+      </destination>
+    </mapping>
+    <mapping name="Mesh 10" visible="true" locked="true" paintId="10" id="10" depth="10" className="ColorMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="186.2" x="-344.4"/>
+          <vertex y="187.6" x="455"/>
+          <vertex y="376.32" x="-372.4"/>
+          <vertex y="360.64" x="466.48"/>
+        </vertices>
+      </destination>
+    </mapping>
+    <mapping name="Mesh 11" visible="true" locked="true" paintId="10" id="11" depth="11" className="ColorMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-464.52" x="-329.28"/>
+          <vertex y="-458.64" x="442.96"/>
+          <vertex y="-245" x="-347.2"/>
+          <vertex y="-246.4" x="463.4"/>
+        </vertices>
+      </destination>
+    </mapping>
+    <mapping name="Mesh 13" visible="false" locked="true" paintId="11" id="13" depth="13" className="TextureMapping" solo="false">
+      <opacity>1</opacity>
+      <destination className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-246" x="-113"/>
+          <vertex y="-245" x="83"/>
+          <vertex y="11" x="-111"/>
+          <vertex y="12" x="75"/>
+        </vertices>
+      </destination>
+      <source className="Mesh">
+        <locked>true</locked>
+        <nColumns>2</nColumns>
+        <nRows>2</nRows>
+        <vertices>
+          <vertex y="-203" x="-534"/>
+          <vertex y="-202" x="-104"/>
+          <vertex y="277" x="-533"/>
+          <vertex y="277" x="-106"/>
+        </vertices>
+      </source>
+    </mapping>
+  </mappings>
+</project>
